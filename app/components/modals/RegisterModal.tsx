@@ -19,6 +19,7 @@ import Modal from "./Modal";
 import Input from "../inputs/Input";
 import Heading from "../Heading";
 import Button from "../Button";
+import { FaFacebook } from "react-icons/fa";
 
 const RegisterModal= () => {
   const registerModal = useRegisterModal();
@@ -103,6 +104,12 @@ const RegisterModal= () => {
         label="Continue with Google"
         icon={FcGoogle}
         onClick={() => signIn('google')} 
+      />
+       <Button 
+        outline 
+        label="Continue with Facebook"
+        icon={FaFacebook}
+        onClick={() => signIn('Facebook')} 
       />
       <Button 
         outline 
